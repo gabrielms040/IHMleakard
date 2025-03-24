@@ -1,0 +1,11 @@
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #A678E0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%), #6e26b3;
+    color: white;
+}

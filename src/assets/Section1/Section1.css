@@ -1,0 +1,315 @@
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  height: 4vh;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: #A678E0;
+  color: #42405C;
+}
+
+/* Estilo do input com foco */
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {  
+  width: 100%;
+  height: 100%;
+  background: #6e26b3; /* Cor de fundo base */
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%), #6e26b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 5rem;
+  margin-bottom: -4%;
+  transition: all 0.4s ease-in-out;
+  max-height: min-content;
+}
+
+
+.title:hover{
+  color: #A678E0;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  height: 4vh;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: #A678E0;
+  border-radius: 3px;
+  color: #42405C;
+}
+
+/* Estilo do input com foco */
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+}
+
+/* Estilo para o checkbox customizado */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 25vw;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+/* Esconde o checkbox original */
+.checkbox-container input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Caixa do botão quadrado */
+.checkbox-custom {
+  text-indent: 10%;
+  border-radius: 4px;
+  width: 50px;
+  height: 20px;
+  background-color: #A678E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ícone de check (invisível por padrão) */
+.checkbox-custom::after {
+  content: "✔";
+  font-size: 10px;
+  color: white;
+  display: none; /* Não aparece quando não está marcado */
+}
+
+/* Quando marcado, mostra o ícone de check */
+.checkbox-container input[type="checkbox"]:checked + .checkbox-custom::after {
+  display: block;  
+}
+
+/* Alteração de fundo quando o checkbox é clicado */
+.checkbox-container input[type="checkbox"]:checked + .checkbox-custom {
+  background-color: #A678E0; /* Cor mantém a mesma ao ser clicado */
+}
+
+/* Estilo do botão de envio */
+button[type="submit"] {
+  margin-bottom: 17%;
+  padding: 12px;
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4e5b9d;
+}
+
+/* Estilo de erro */
+/* Estilo de erro */
+.error {
+  color: rgb(31, 15, 15);
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  position: absolute; /* Posiciona o erro de forma absoluta */
+  top: 85%; /* Define a posição do erro na página */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o erro horizontalmente */
+  animation: errorFadeIn 0.5s ease-out forwards, errorFadeOut 0.5s ease-out 2.5s forwards;
+}
+
+/* Define a animação de entrada */
+@keyframes errorFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Define a animação de saída */
+@keyframes errorFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Estilo do botão de envio (Entrar) */
+button[type="submit"] {
+  padding: 12px 15px; /* Adiciona um pouco mais de espaçamento para ficar equilibrado */
+  background-color: #A678E0; /* Cor de fundo igual ao input */
+  color: white;
+  border: none;
+  border-radius: 12px; /* Deixa o botão mais arredondado */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 400px; /* Limita a largura do botão */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+
+}
+
+/* Efeito de hover no botão de entrar */
+button[type="submit"]:hover {
+  background-color: #8a55d3; /* Tom mais escuro no hover */
+  transform: 0.3s ease; /* Efeito de "elevação" ao passar o mouse */
+}
+
+/* Efeito de click (pressed) no botão de entrar */
+button[type="submit"]:active {
+  transform: translateY(1px); /* Dá a impressão de "pressionado" */
+}
+
+@media (max-width: 1256px) {
+  .section1 {
+    flex-direction: column; /* Alinha a seção na vertical */
+    height: 100vh; /* Ajusta a altura para conteúdo responsivo */
+  }
+
+
+  .form {
+    width: 100vw; /* Ajusta o formulário para ser mais responsivo */
+
+  }
+
+ 
+  button[type="submit"] {
+    padding: 10px 15px; /* Ajusta o padding */
+  }
+
+  .checkbox-container {
+    font-size: 10px; /* Ajusta o tamanho da fonte do checkbox */
+    width: 100%; /* Ajusta a largura do checkbox */
+  }
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  .section1 {
+    flex-direction: column; /* Alinha a seção na vertical */
+    height: 100vh; /* Ajusta a altura para conteúdo responsivo */
+  }
+
+
+  .form {
+    width: 100vw; /* Ajusta o formulário para ser mais responsivo */
+
+  }
+
+ 
+  button[type="submit"] {
+    padding: 10px 15px; /* Ajusta o padding */
+  }
+
+  .checkbox-container {
+    font-size: 10px; /* Ajusta o tamanho da fonte do checkbox */
+    width: 100%; /* Ajusta a largura do checkbox */
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .form {
+    width: 90%; /* Ajusta para usar quase toda a largura disponível */
+  }
+
+  button[type="submit"] {
+    padding: 8px 12px; /* Ajusta o padding */
+  }
+
+  .checkbox-container {
+    font-size: 12px; /* Reduz o tamanho da fonte do checkbox */
+    width: 100%; /* Alinha o checkbox para 100% de largura */
+  }
+}
