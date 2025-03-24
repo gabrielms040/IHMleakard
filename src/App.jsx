@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from 'react'; 
 import Section1 from "./assets/Section1";
 import Section2 from "./assets/Section2";
 import { useState } from "react";
